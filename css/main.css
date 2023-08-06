@@ -260,3 +260,65 @@ Navbar
 ===============
 */
 
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-center{
+  width: 90vw;
+  max-width: var(--max-width);
+}
+
+.nav-header{
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo{
+  display: flex;
+  align-items: center;
+}
+
+.nav-header img{
+  width: 200px;
+}
+
+.nav-btn{
+  padding: 0.25rem 1rem;
+}
+
+.nav-links{
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.show-links{
+  height: 310px;
+}
+
+.nav-link{
+  display: block;
+  text-align: center;
+  color: var(--grey-900);
+  text-transform: capitalize;
+  border-top: 1px solid var(--grey-500);
+  letter-spacing: var(--letterSpacing);
+  padding: 1rem 0;
+  transition: var(--transition);
+}
+
+.nav-link:hover{
+  color: var(--primary-500);
+}
+
+.contact-link a{
+  padding: 0.25rem 1rem;
+}
