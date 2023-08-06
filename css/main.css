@@ -322,3 +322,36 @@ Navbar
 .contact-link a{
   padding: 0.25rem 1rem;
 }
+
+@media screen and (min-width: 992px) {
+  .nav-btn{
+    display: none;
+  }
+  .navbar{
+    height: 6rem;
+  }
+  .nav-header{
+    height: auto;
+    margin-right: 2rem;
+  }
+  .nav-center{
+    display: flex;
+    align-items: center;
+  }
+  .nav-links{
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-link{
+    padding: 0;
+    border: none;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .contact-link{
+    margin-left: auto;
+  }
+}
