@@ -590,10 +590,10 @@ About
   Contact
   ===============
   */
-
-.contact-form{
-  width: 100%;
-  margin: 0;
+  
+  .contact-form{
+    width: 100%;
+    margin: 0;
 }
 
 .contact-container{
@@ -608,3 +608,47 @@ About
     align-items: center;
   }
 }
+
+  /*
+  =============== 
+  Contact
+  ===============
+  */
+
+  .tags-wrapper{
+    display: grid;
+    gap: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .tag{
+    background-color: var(--primary-500);
+    text-align: center;
+    border-radius: var(--borderRadius);
+    transition: var(--transition);
+    color: white;
+    padding: 0.75rem 0;
+  }
+
+  .tag:hover{
+    background-color: var(--primary-800);
+  }
+
+  .tag h5,.tag p {
+    margin-bottom: 0;
+  }
+
+  .tag h5 {
+    font-weight: 600;
+  }
+
+  @media screen and (min-width: 576px) {
+    .tags-wrapper{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .tags-wrapper{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
